@@ -6,6 +6,40 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script>
+            let score = 0.0;
+            let TakeQuize = confirm("Do you want to take a short quiz?");
+            if (TakeQuize == true) {
+                let Q1 = parseInt(prompt("Write a number between 5 and 10?"));
+                if (Q1 < 10 && Q1 > 5) {
+                    score++;
+                }
+        
+                let Q2 = parseInt(prompt("Write a number smaller than 10?"));
+                if (Q2 < 10) {
+                    score++;
+                }
+
+                let Q3 = parseInt(prompt("how many continents in the world?"));
+                if (Q3 == 7) {
+                    score++;
+                }else if(Q3 == 6 ){
+                    alert("close answer ")
+                     score += 0.5;
+                }else if(Q3 ==8){
+                    alert("close answer ")
+                     score += 0.5;
+                }
+        
+                if (score >= 2) {
+                    alert("Good job! Your score is " + score);
+                } else if (score < 2) {
+                    alert("Hard luck! Your score is " + score);
+                }
+            } else {
+                alert("Thank you for visiting our website");
+            }
+        </script>
     </head>
     <body>
         <nav>
@@ -16,7 +50,12 @@
         </nav>
         
         <form action="coursespage.html"
-
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <a href="Lab1.html"></a>
        <div class="bodybox">
         
